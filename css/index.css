@@ -74,3 +74,66 @@ top: 400px;
     font-weight: bold;
     text-align: center;   
 }
+.question h1 {
+ color: rgb(255, 0, 0);
+ font-weight: bold;
+ font-size: 2rem;
+ text-align: center;   
+}
+.question p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.quote {
+    background: rgb(202, 175, 196);
+}
+.quote h1 {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: end;
+}
+.quote p {
+    font-size: 2rem;
+    font-style: italic;
+}
+.box {
+    box-sizing: border-box;
+    width: 55%;
+    border: thin;
+    background: transparent;
+    padding: 40px;
+    margin-left: 250px;
+}
+.blog {
+    background-color: rgb(164, 197, 216);
+}
+.blog h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+#articles {
+    display: flex;
+    justify-content: space-around
+}
+.information {
+    box-sizing: border-box;
+    width: 55%;
+    border: thin;
+    background-image: url("../image/boy.jpg");
+    background-size: cover;
+    padding: 40px;
+    margin-left: 100px;
+    width: 550px;
+    height: 600px;
+}
+.data {
+    box-sizing: border-box;
+    width: 55%;
+    border: thin;
+    background-image: url("../image/gull.jpg");
+    background-size: cover;
+    padding: 40px;
+    width: 550px;
+    height: 600px; 
+}
