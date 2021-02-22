@@ -1,0 +1,76 @@
+body header {
+    background: linear-gradient(90deg, darkslategrey, seagreen)
+}
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-style: italic;
+    display: flex;
+    align-content: space-around;
+    list-style-type: none;
+    margin-left: 450px;
+}
+nav h1 {
+    color: blueviolet;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.info h1 {
+   color: white;
+font-family: 'Times New Roman', Times, serif;
+font-size: 3rem;
+font-weight: bold;
+position: absolute;
+left: 800px;
+top: 230px; 
+}
+.info p {
+color: white;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+font-size: 2rem;
+position: absolute;
+left: 800px;
+top: 400px;
+}
+/*header is finished today*/
+.inform {
+    background-image: url("../image/street.jpg");
+    background-size: cover;
+    max-width: 1400px;
+    min-height: 550px;
+}
+.content-box {
+    box-sizing: border-box;
+    width: 40%;
+    border: thin;
+    background: rgba(88, 88, 85, 0.7);
+    padding: 40px;
+    margin: 40px;
+}
+.content-box h2 {
+    color: white;
+    font-size: 2rem;
+}
+.main_information h3, 
+.main_information p {
+    color: white;
+    font-size: 1rem;
+}
+/*content-box is finished todday*/
+.statistics {
+    background: rgb(0, 0, 0);
+    width: 1335px;
+    color: rgb(255, 255, 255);
+}
+.statistics thead {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+.statistics tbody, 
+.statistics tfoot {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;   
+}
