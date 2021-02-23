@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
     <link rel="stylesheet" href="css/index.css">
-     <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/carousel.css">
 </head>
 
 <body>
@@ -13,17 +14,22 @@
         <nav>
             <ul class="logo">
                 <h1>MaryTravel</h1>
-                <li><a href="#about_me">About Me</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#travel_tips">Travel Tips</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contacts">Contacts</a></li>
+                <laber class="burger_icon" for="burger-checkout">*</laber>
+                <input type="checkbox" id="burger_checkbox">
+                <div class="menu">
+                    <li><a href="#about_me">About Me</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#travel_tips">Travel Tips</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
             </ul>
+            </div>
         </nav>
         <div>
             <article class="info">
                 <h1> Привіт. Мене звати Марічка. Я travel guide</h1>
-                <p>Подорож - стиль мого життя! Якщо ви відчуваєте те саме, то пакуйте валізи і let's travel together! </p>
+                <p>Подорож - стиль мого життя! Якщо ви відчуваєте те саме, то пакуйте валізи і let's travel together!
+                </p>
             </article>
             <img src="image/boat.jpg" alt="boat">
         </div>
@@ -63,10 +69,10 @@
             </tbody>
             <tfoot>
                 <tr>
-                   <td>країн</td> 
-                   <td>міст</td> 
-                   <td>фото</td> 
-                   <td>нових друзів</td> 
+                    <td>країн</td>
+                    <td>міст</td>
+                    <td>фото</td>
+                    <td>нових друзів</td>
                 </tr>
             </tfoot>
         </table>
@@ -75,14 +81,14 @@
             <hr>
             <p>Facebook: <a href="https://www.facebook.com/maria.khomych.5">Хомич Марія</a></p>
         </div>
-     <div class="carousel">
-         <img class="current" src="" alt="Carousel Image">
-         <button class="prev">&lt</button>
-         <button class="next">&gt</button>
-     </div>
+        <div class="carousel">
+            <img class="current" src="" alt="Carousel Image">
+            <button class="prev">&lt</button>
+            <button class="next">&gt</button>
+        </div>
         <script src="js/index.js"></script>
-     <script src="js/carousel.js"></script>
-     <section class="quote">
+        <script src="js/carousel.js"></script>
+        <section class="quote">
             <div class="box">
                 <img src="image/symbol.jpg" alt="лапки">
                 <h1>Подорожі навчають більше, ніж будь-що інше. Іноді один день, проведений в інших місцях, дає більше,
@@ -90,7 +96,7 @@
                 <p>Анатоль Франс</p>
             </div>
         </section>
-        <section class="blog">
+        <section class="blog" id="blog">
             <h2>Blog</h2>
             <div id="articles">
                 <article class="information">
@@ -114,6 +120,69 @@
                 </article>
             </div>
         </section>
+        <div class="tips" id="travel_tips">
+            <table>
+                <h1>Travel Tips</h1>
+                <colgroup span="3"></colgroup>
+                <tr>
+                    <th>Transport</th>
+                    <th>Clothes</th>
+                    <th>Money</th>
+                </tr>
+                <tr>
+                    <td>Літак - тільки для швидкого і зручного перельоту</td>
+                    <td>Не бери багато одягу. Ти ж не переїжджаєш туди жити...</td>
+                    <td>Не бери купюри номіналом 100, 200 євро. Часто їх не приймають в магазинах</td>
+                </tr>
+                <tr>
+                    <td>Атобус і авто - якщо хочеш побачити більше</td>
+                    <td>Обов'язково має бути зручне взуття (не нове)</td>
+                    <td>Потрібно мати дрібні гроші для WC</td>
+                </tr>
+                <tr>
+                    <td>Не бійся громадського транспорту. Це ще та пригода!</td>
+                    <td>Май про запас плащ або парасольку. Погода непередбачувана</td>
+                    <td>Візьми банківську карту, але попередь свій банк про виїзд за кордон</td>
+                </tr>
+                <tr>
+                    <td>Обов'язково купуй і компостуй квиток!</td>
+                </tr>
+            </table>
+        </div>
+        <section class="gallery">
+            <h1>Gallery</h1>
+            <p>I remember all picture I saw, but photoes remember better</p>
+            <h2>Будапешт</h2>
+            <img src="image/dog.jpg" alt="пес">
+            <img src="image/memorial.jpg" alt="пам'ятник">
+            <img src="image/buda.jpg" alt="будайський палац">
+        </section>
+        <form>
+            <h1><strong>Ask me</strong></h1>
+            <p>Якщо ти хочеш дізнатися більше інформації про подорожі, країни, різні лайфхаки пиши запитання і я
+                answer</p>
+            <label>
+                Your name: <input type="text" name="name" placeholder="Name" required>
+            </label>
+            <label>
+                Your e-mail: <input type="e-mail" name="e-mail" placeholder="E-mail" required>
+            </label>
+            <label>
+                Your message: <textarea name="message" placeholfer="Message" required></textarea>
+            </label>
+            <br>
+            <input type="Submit">
+        </form>
     </main>
+    <footer>
+        <div>
+            <h1 id="contacts">FOLLOW ME</h1>
+            <h2>+38(050)76-86-566</h2>
+            <img src="image/social.jpg" alt="соцмережі">
+            <p>Created by Mariia Khomych</p>
+            <p>All rights Reserved</p>
+        </div>
+    </footer>
 </body>
+
 </html>

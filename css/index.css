@@ -1,19 +1,38 @@
 body header {
     background: linear-gradient(90deg, darkslategrey, seagreen)
 }
-.logo {
+#burger_checkbox {
+   display: none; 
+}
+.burger_icon {
+    font-size: 3rem;
+}
+header .menu {
+    display: none;
+}
+header input:checked ~ .menu {
+    display: flex;
+    flex-direction: column;
+}
+.menu {
     color: white;
     font-size: 1.5rem;
     font-style: italic;
     display: flex;
-    align-content: space-around;
-    list-style-type: none;
+    justify-content: space-around;
     margin-left: 450px;
+    margin-top: 0;
+    list-style-type: none;
 }
 nav h1 {
     color: blueviolet;
     font-size: 3rem;
     font-weight: bold;
+}
+@media (min-width: 550px) {
+    header nav {
+        display: flex;
+    }
 }
 .info h1 {
    color: white;
@@ -37,7 +56,6 @@ top: 400px;
 .inform {
     background-image: url("../image/street.jpg");
     background-size: cover;
-    max-width: 1400px;
     min-height: 550px;
 }
 .content-box {
@@ -137,3 +155,22 @@ top: 400px;
     width: 550px;
     height: 600px; 
 }
+#travel_tips {
+    text-align: center;
+    font-weight: bold;
+}
+.tips {
+    background-image: url("../image/sea.jpg");
+    background-size: cover;
+    color: black;
+    font-size: 2rem;
+}
+.gallery h1,
+.gallery p {
+font-size: 2rem;
+font-style: italic;
+}
+.gallery {
+    background-color: rgb(164, 197, 216);
+}
+
