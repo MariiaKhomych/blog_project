@@ -1,20 +1,23 @@
+:root {
+    --main-color: rgb(255, 255, 255);
+}
+body {
+    max-width: 1000px;
+    margin: auto;
+}
 body header {
     background: linear-gradient(90deg, darkslategrey, seagreen)
+}
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .logo {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.5rem;
     color: violet;
     padding: 10px;
-}
-#burger_checkbox {
-   display: none; 
-}
-.burger_icon {
-    display: none;
-}
-header input:checked ~ .menu {
-    display: flex;
 }
 header .menu {
     display: flex;
@@ -25,40 +28,29 @@ header .menu a {
     text-transform: uppercase;
     color: white;
     padding: 15px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 header .menu a:hover {
     font-weight: bold;
 }
-@media (max-width: 600px) {
-    header nav {
-        display: flex;
-    }
-    header .menu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        display: block;
-        flex: 1;        
-    }
+.info {
+    border:thin;
+    width: 40%;
+    display: column;
+}
+#info {
+    display: flex;
+    justify-content: space-around;
 }
 .info h1 {
-   color: white;
-font-family: 'Times New Roman', Times, serif;
-font-size: 3rem;
-font-weight: bold;
-position: absolute;
-left: 800px;
-top: 230px; 
+    font-family: Palatino, URW Palladio L, serif;
+    color: var(--main-color);
+    font-size: 2.5rem;
 }
 .info p {
-color: white;
-font-family: 'Times New Roman', Times, serif;
-font-weight: bold;
-font-size: 2rem;
-position: absolute;
-left: 800px;
-top: 400px;
+    font-family: Palatino, URW Palladio L, serif;
+    color: var(--main-color);
+    font-size: 1.5rem;
 }
 #info img{
     object-position: 90.60% 50%;
