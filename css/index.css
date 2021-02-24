@@ -1,37 +1,45 @@
 body header {
     background: linear-gradient(90deg, darkslategrey, seagreen)
 }
+.logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    color: violet;
+    padding: 10px;
+}
 #burger_checkbox {
    display: none; 
 }
 .burger_icon {
-    font-size: 3rem;
-}
-header .menu {
     display: none;
 }
 header input:checked ~ .menu {
     display: flex;
-    flex-direction: column;
 }
-.menu {
-    color: white;
-    font-size: 1.5rem;
-    font-style: italic;
+header .menu {
     display: flex;
-    justify-content: space-around;
-    margin-left: 450px;
-    margin-top: 0;
-    list-style-type: none;
+   list-style-type: none;
 }
-nav h1 {
-    color: blueviolet;
-    font-size: 3rem;
+header .menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+header .menu a:hover {
     font-weight: bold;
 }
-@media (min-width: 550px) {
+@media (max-width: 600px) {
     header nav {
         display: flex;
+    }
+    header .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        display: block;
+        flex: 1;        
     }
 }
 .info h1 {
@@ -51,6 +59,19 @@ font-size: 2rem;
 position: absolute;
 left: 800px;
 top: 400px;
+}
+#info img{
+    object-position: 90.60% 50%;
+    width: 50%;
+    display: block;
+}
+@media (max-width: 500px){
+    #info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: stretch;  
+    }
 }
 /*header is finished today*/
 .inform {
@@ -75,7 +96,7 @@ top: 400px;
     color: white;
     font-size: 1rem;
 }
-/*content-box is finished todday*/
+/*content-box is finished today*/
 .statistics {
     background: rgb(0, 0, 0);
     width: 1335px;
@@ -91,6 +112,11 @@ top: 400px;
     font-size: 3rem;
     font-weight: bold;
     text-align: center;   
+}
+@media (max-width: 550px) {
+    .statistics {
+        display: grid;
+    }
 }
 .question h1 {
  color: rgb(255, 0, 0);

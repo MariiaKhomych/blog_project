@@ -12,20 +12,20 @@
 <body>
     <header>
         <nav>
-            <ul class="logo">
+            <div class="logo">
                 <h1>MaryTravel</h1>
-                <laber class="burger_icon" for="burger-checkout">*</laber>
+            </div>
+                <label class="burger_icon" for="burger-checkout">☰</label>
                 <input type="checkbox" id="burger_checkbox">
                 <div class="menu">
-                    <li><a href="#about_me">About Me</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#travel_tips">Travel Tips</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-            </ul>
+                    <div><a href="#about_me">About Me</a></div>
+                    <div><a href="#blog">Blog</a></div>
+                    <div><a href="#travel_tips">Travel Tips</a></div>
+                    <div><a href="#gallery">Gallery</a></div>
+                    <div><a href="#contacts">Contacts</a></div>
             </div>
         </nav>
-        <div>
+        <div id="info">
             <article class="info">
                 <h1> Привіт. Мене звати Марічка. Я travel guide</h1>
                 <p>Подорож - стиль мого життя! Якщо ви відчуваєте те саме, то пакуйте валізи і let's travel together!
@@ -82,9 +82,9 @@
             <p>Facebook: <a href="https://www.facebook.com/maria.khomych.5">Хомич Марія</a></p>
         </div>
         <div class="carousel">
-            <img class="current" src="" alt="Carousel Image">
-            <button class="prev">&lt</button>
-            <button class="next">&gt</button>
+            <img class="current" src=" " alt="Carousel Image">
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
         </div>
         <script src="js/index.js"></script>
         <script src="js/carousel.js"></script>
@@ -121,8 +121,8 @@
             </div>
         </section>
         <div class="tips" id="travel_tips">
-            <table>
-                <h1>Travel Tips</h1>
+             <h1>Travel Tips</h1>
+             <table>
                 <colgroup span="3"></colgroup>
                 <tr>
                     <th>Transport</th>
@@ -149,7 +149,7 @@
                 </tr>
             </table>
         </div>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <h1>Gallery</h1>
             <p>I remember all picture I saw, but photoes remember better</p>
             <h2>Будапешт</h2>
