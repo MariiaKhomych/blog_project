@@ -199,4 +199,29 @@ font-style: italic;
 .gallery {
     background-color: rgb(164, 197, 216);
 }
+.label {
+  background-image: url("../image/palace.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.label_box {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    width: 40%;
+    height: 450px;
+     align-items: center;
+}
+#contacts {
+    background-color: rgb(189, 214, 214);
+}
+#contacts h1,
+#contacts h2,
+#contacts img,
+#contacts p {
+    display: flex;
+    justify-content: center;
+}
+
 
