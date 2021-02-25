@@ -7,6 +7,10 @@
     <title>My Blog</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/carousel.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 
 <body>
@@ -15,13 +19,19 @@
             <div class="logo">
                 <h1>MaryTravel</h1>
             </div>
-            <ul class="menu">
-                <li><a href="#about_me">About Me</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#travel_tips">Travel Tips</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu_box">
+                    <li><a class="menu__item" href="#about_me">About Me</a></li>
+                    <li><a class="menu__item" href="#blog">Blog</a></li>
+                    <li><a class="menu__item" href="#travel_tips">Travel Tips</a></li>
+                    <li><a class="menu__item" href="#gallery">Gallery</a></li>
+                    <li><a class="menu__item" href="#contacts">Contacts</a></li>
+                </ul>
+            </div>
         </nav>
         <div id="info">
             <article class="info">
@@ -51,29 +61,20 @@
             </div>
         </div>
 
-        <table class="statistics">
-            <thead>
-                <tr>
-                    <th>Статистика</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>13</th>
-                    <th>150</th>
-                    <th>7000+</th>
-                    <th>200</th>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>країн</td>
-                    <td>міст</td>
-                    <td>фото</td>
-                    <td>нових друзів</td>
-                </tr>
-            </tfoot>
-        </table>
+        <div class="container">
+            <h1>Статистика</h1>
+            <div class="row row-cols-4">
+                <div class="col">13</div>
+                <div class="col">150</div>
+                <div class="col">7000+</div>
+                <div class="col">200</div>
+                <div class="col">країн</div>
+                <div class="col">міст</div>
+                <div class="col">фото</div>
+                <div class="col">друзів</div>
+            </div>
+        </div>
+
         <div class="question">
             <h1>Хочеш побачити та дізнатися більше?</h1>
             <hr>
@@ -183,6 +184,9 @@
             <p>All rights Reserved</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
