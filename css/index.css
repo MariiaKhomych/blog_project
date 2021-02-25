@@ -209,8 +209,15 @@ header nav{
     color: rgb(0, 0, 0);
     text-align: center;
 }
+    .prev {
+    margin-left: 140px;
+    }
+.box {
+    background: linear-gradient(90deg, darkslategrey, seagreen)
+}
 .quote {
-    background: rgb(202, 175, 196);
+    text-align: center;
+    margin-top: 130px;
 }
 .quote h1 {
     font-size: 2rem;
@@ -222,12 +229,7 @@ header nav{
     font-style: italic;
 }
 .box {
-    box-sizing: border-box;
-    width: 55%;
-    border: thin;
-    background: transparent;
-    padding: 40px;
-    margin-left: 250px;
+    display: flex;
 }
 .blog {
     background-color: rgb(164, 197, 216);

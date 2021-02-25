@@ -1,8 +1,8 @@
 const images = [
-    'image/dog.jpg',
-    'image/fountain.jpg',
-    'image/shenbrunn.jpg',
-    'image/prince.jpg',
+    'image/aeroport.jpg',
+    'image/metro.jpg',
+    'image/rest.jpg',
+    'image/sand.jpg',
 ]
 
 let currIdx = 0;

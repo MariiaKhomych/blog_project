@@ -80,20 +80,20 @@
             <hr>
             <p>Facebook: <a href="https://www.facebook.com/maria.khomych.5">Хомич Марія</a></p>
         </div>
-        <div class="carousel">
-            <img class="current" src=" " alt="Carousel Image">
-            <button class="prev">&lt;</button>
-            <button class="next">&gt;</button>
-        </div>
-        <script src="js/index.js"></script>
-        <script src="js/carousel.js"></script>
-        <section class="quote">
-            <div class="box">
-                <img src="image/symbol.jpg" alt="лапки">
+        <div class="box">
+            <div class="carousel">
+                <img class="current" src=" " alt="Carousel Image">
+                <button class="prev">&lt;</button>
+                <button class="next">&gt;</button>
+            </div>
+            <script src="js/index.js"></script>
+            <script src="js/carousel.js"></script>
+            <div class="quote">
                 <h1>Подорожі навчають більше, ніж будь-що інше. Іноді один день, проведений в інших місцях, дає більше,
                     ніж десять років життя</h1>
                 <p>Анатоль Франс</p>
             </div>
+        </div>
         </section>
         <section class="blog" id="blog">
             <h2>Blog</h2>
@@ -151,29 +151,59 @@
         <section class="gallery" id="gallery">
             <h1>Gallery</h1>
             <p>I remember all picture I saw, but photoes remember better</p>
-            <h2>Будапешт</h2>
-            <img src="image/dog.jpg" alt="пес">
-            <img src="image/memorial.jpg" alt="пам'ятник">
-            <img src="image/buda.jpg" alt="будайський палац">
-        </section>
-        <div class="label">
-            <form class="label_box">
-                <h1><strong>Ask me</strong></h1>
-                <p>Якщо ти хочеш дізнатися більше інформації про подорожі, країни, різні лайфхаки пиши запитання і я
-                    answer</p>
-                <label>
-                    Your name: <input type="text" name="name" placeholder="Name" required>
-                </label>
-                <label>
-                    Your e-mail: <input type="e-mail" name="e-mail" placeholder="E-mail" required>
-                </label>
-                <label>
-                    Your message: <textarea name="message" placeholder="Message" required></textarea>
-                </label>
-                <br>
-                <input type="Submit">
-            </form>
-        </div>
+             <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#Stokholm" role="tab" aria-selected="true">Stokholm</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#Tallinn" role="tab" aria-selected="false">Tallinn</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#Verona" role="tab" aria-selected="false">Verona</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#Lofoten-Islands" role="tab" aria-selected="false">Lofoten Islands</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#Tromsø" role="tab" aria-selected="false">Tromsø</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="Stokholm" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="places_details_image">
+                                    <img src="image/kingpalace.jpg" alt="king_palace" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="Tallinn" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="places_details_image">
+                                    <img src="image/round.jpg" alt="round" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="Verona" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="places_details_image">
+                                    <img src="image/garda.jpg" alt="garda" class="img-fluid">
+                                </div>
+                            </div>
+                    <div class="label">
+                        <form class="label_box">
+                            <h1><strong>Ask me</strong></h1>
+                            <p>Якщо ти хочеш дізнатися більше інформації про
+                                подорожі,
+                                країни, різні лайфхаки пиши запитання і я
+                                answer</p>
+                            <label>
+                                Your name: <input type="text" name="name" placeholder="Name" required>
+                            </label>
+                            <label>
+                                Your e-mail: <input type="e-mail" name="e-mail" placeholder="E-mail" required>
+                            </label>
+                            <label>
+                                Your message: <textarea name="message" placeholder="Message" required></textarea>
+                            </label>
+                            <br>
+                            <input type="Submit">
+                        </form>
+                    </div>
     </main>
     <footer>
         <div id="contacts">
