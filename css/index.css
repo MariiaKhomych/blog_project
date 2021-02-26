@@ -182,7 +182,6 @@ header nav{
 /*content-box is finished today*/
 .container {
     background: rgb(0, 0, 0);
-    width: 1335px;
     color: rgb(255, 255, 255);
 }
 .container h1 {
@@ -231,49 +230,6 @@ header nav{
 .box {
     display: flex;
 }
-.blog {
-    background-color: rgb(164, 197, 216);
-}
-.blog h2 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 3rem;
-}
-#articles {
-    display: flex;
-    justify-content: space-around
-}
-.information {
-    box-sizing: border-box;
-    width: 55%;
-    border: thin;
-    background-image: url("../image/boy.jpg");
-    background-size: cover;
-    padding: 40px;
-    margin-left: 100px;
-    width: 550px;
-    height: 600px;
-}
-.data {
-    box-sizing: border-box;
-    width: 55%;
-    border: thin;
-    background-image: url("../image/gull.jpg");
-    background-size: cover;
-    padding: 40px;
-    width: 550px;
-    height: 600px; 
-}
-#travel_tips {
-    text-align: center;
-    font-weight: bold;
-}
-.tips {
-    background-image: url("../image/sea.jpg");
-    background-size: cover;
-    color: black;
-    font-size: 2rem;
-}
 .gallery h1,
 .gallery p {
 font-size: 2rem;
@@ -282,28 +238,53 @@ font-style: italic;
 .gallery {
     background-color: rgb(164, 197, 216);
 }
-.label {
-  background-image: url("../image/palace.jpg");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
+.tips h1 {
+    text-decoration: underline overline rgb(100, 15, 12);
+    text-align: center;
 }
-.label_box {
+.tips {
+    background-image: url("../image/sea.jpg");
+    background-size: cover;
+    color: black;
+    font-size: 2rem;
+}
+#travel_tips {
+     background: rgba(88, 88, 85, 0.3);
+}
+/* form control */
+.contact_form {
     display: flex;
-    flex-direction: column;
-    border: solid;
-    width: 40%;
-    height: 450px;
-     align-items: center;
+}
+.order_form {
+    text-align: center;
+}
+.form-holder {
+    width: 400px;
+}
+.form-control {
+    display: block;
+    align-items: center;
+    width: 100%;
+    border-radius: 23.5px;
+    height: 47px;
+    padding: 0 24px;
+    color: #817e8f;
+    font-size: 13px;
+    border: none;
+    background: #f7f7f7;
+    margin-bottom: 20px;
 }
 #contacts {
     background-color: rgb(189, 214, 214);
 }
 #contacts h1,
 #contacts h2,
-#contacts img,
+.icons,
 #contacts p {
     display: flex;
     justify-content: center;
 }
-
+.icon {
+    max-width: 40px;
+    padding: 5px;
+}
