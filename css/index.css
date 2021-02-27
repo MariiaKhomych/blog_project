@@ -94,11 +94,11 @@ header nav{
     }
     }
 /*content-box is finished today*/
-.container {
+.container-stat {
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
-.container h1 {
+.container-stat h1 {
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
@@ -126,7 +126,8 @@ header nav{
     margin-left: 140px;
     }
 .box {
-    background: linear-gradient(90deg, darkslategrey, seagreen)
+    background: linear-gradient(90deg, darkslategrey, seagreen);
+    display: flex;
 }
 .quote {
     text-align: center;
@@ -135,31 +136,11 @@ header nav{
 .quote h1 {
     font-size: 2rem;
     font-style: italic;
-    text-align: end;
+    text-align: start;
 }
 .quote p {
     font-size: 2rem;
     font-style: italic;
-}
-@media (min-width: 700px) {
-    .box {
-       display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        flex: 1;
-    }
-    }
-.box {
-    display: flex;
-}
-.gallery h1,
-.gallery p {
-font-size: 2rem;
-font-style: italic;
-}
-.gallery {
-    background-color: rgb(164, 197, 216);
 }
 .tips h1 {
     text-decoration: underline overline rgb(100, 15, 12);
