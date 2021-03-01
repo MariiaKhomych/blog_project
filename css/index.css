@@ -38,7 +38,7 @@ header nav{
     font-size: 2.5rem;
 }
 .info p {
-    font-family: Palatino, URW Palladio L, serif;
+    font-family: "Fira Sans", serif;
     color: var(--main-color);
     font-size: 1.5rem;
 }
@@ -75,14 +75,14 @@ header nav{
 .content-box h2 {
     display: flex;
     flex-direction: row;
-    color: white;
+    color: var(--main-color);
     font-size: 2rem;
 }
 .main_information h3, 
 .main_information p {
     display: flex;
     flex-direction: row;
-    color: white;
+    color: var(--main-color);
     font-size: 1rem;
 }
 @media(min-width: 700px) {
@@ -96,7 +96,7 @@ header nav{
 /*content-box is finished today*/
 .container-stat {
     background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    color: var(--main-color);
 }
 .container-stat h1 {
     font-size: 3rem;
