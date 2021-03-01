@@ -183,8 +183,8 @@ header nav{
 #contacts {
     background-color: rgb(189, 214, 214);
 }
-#contacts h1,
-#contacts h2,
+#contacts h4,
+#contacts h5,
 .icons,
 #contacts p {
     display: flex;
