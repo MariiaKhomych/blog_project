@@ -1,6 +1,5 @@
 const images = [
     'image/aeroport.jpg',
-    'image/metro.jpg',
     'image/rest.jpg',
     'image/sand.jpg',
 ]

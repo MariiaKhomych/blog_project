@@ -112,15 +112,20 @@ header nav{
         display: grid;
     }
 }
+.question {
+    background: rgb(152, 152, 165); 
+}
 .question h1 {
  color: rgb(255, 0, 0);
  font-weight: bold;
- font-size: 2rem;
+ font-size: 2.5rem;
  text-align: center;   
 }
 .question p {
     color: rgb(0, 0, 0);
     text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
 }
     .prev {
     margin-left: 140px;
@@ -136,7 +141,10 @@ header nav{
 .quote h1 {
     font-size: 2rem;
     font-style: italic;
+    font-family: Georgia, serif;
     text-align: start;
+    color: rgb(107, 10, 107);
+
 }
 .quote p {
     font-size: 2rem;
@@ -145,6 +153,8 @@ header nav{
 .tips h1 {
     text-decoration: underline overline rgb(100, 15, 12);
     text-align: center;
+    color: black;
+    font-weight: bold;
 }
 .tips {
     background-image: url("../image/sea.jpg");
@@ -163,6 +173,11 @@ header nav{
     text-align: center;
     border: thin;
     width: 400px;
+    font-weight: bold;
+}
+.order_form h2 {
+    color: blue;
+    font-weight: 700;
 }
 .form-holder {
     width: 400px;
